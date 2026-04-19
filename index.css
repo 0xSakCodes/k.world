@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', monospace;
+  background: linear-gradient(to bottom, #fff0f5, #ffe6f0);
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
