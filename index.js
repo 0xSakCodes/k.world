@@ -18,7 +18,7 @@ function petKitty(card, type) {
     card.style.transform = 'scale(0)';
     card.style.opacity = '0';
     setTimeout(() => card.remove(), 500);
-    alert("Oops! Kitty Ran Away :)");
+    alert("Oops! Kitty Ran Away :) \nBut Left a Message for you:\n\n 🦋🐾 Special Thanks For Being A Friend of Mine! :)");
   }
   else if(type === 'furious'){
     spawnPopup(card, '😾💢 Dont Mess With Me!');
