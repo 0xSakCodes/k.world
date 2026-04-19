@@ -53,6 +53,12 @@ function spawnPopup(card, message) {
     popup.style.opacity = '1';
     popup.style.transform = 'translateX(-50%) translateY(-10px)';
   }, 35);
+
+  setTimeout(() => {
+    popup.style.opacity = '0';
+    popup.style.transform = 'translateX(-50%) translateY(-20px)';
+    setTimeout(() => popup.remove(), 500);
+  }, 1500);
 }
 
 // floating emojis
