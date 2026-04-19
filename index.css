@@ -65,3 +65,48 @@ header h1 {
   font-size: 0.95rem;
   color: #555;
 }
+
+.reaction {
+  position: absolute;
+  font-size: 2rem;
+  pointer-events: none;
+  animation: floatUp 1s forwards;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity:1; }
+  100% { transform: translateY(-60px); opacity: 0; };
+}
+
+.popup {
+  position: absolute;
+  background: #fff0f5;
+  color: #ff69b4;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.scratch {
+  position: absolute;
+  color: #ff0000;
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.8;
+  pointer-events: none;
+  transform: rotate(-20deg);
+}
+
+footer {
+  background-color: #ffb6c1;
+  padding: 1.5rem 0;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
