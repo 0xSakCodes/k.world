@@ -7,7 +7,7 @@ function petKitty(card, type) {
 
   // wiggle effect
   img.style.transform = 'scale(1.1) rotate(10deg)';
-  setTimeout(() => img.style.transform = ", 300);
+  setTimeout(() => img.style.transform=", 300);
   if(type === 'normal'){
     spawnReaction(card, "🦋");
   } 
