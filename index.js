@@ -10,6 +10,7 @@ function petKitty(card, type) {
   setTimeout(() => img.style.transform="", 300);
   if(type === 'normal'){
     spawnReaction(card, "🦋");
+    spawnPopup(card, "🦋🐾");
   } 
   else if(type === 'shy'){
     spawnPopup(card, "😶‍🌫️ Aishhh, You Found Me? 🐾");
