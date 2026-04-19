@@ -32,7 +32,7 @@ function petKitty(card, type) {
       i++;
       if (i>5){
         clearInterval(interval);
-        card.style.transform=";
+        card.style.transform="";
       }
     }, 50);
   };
