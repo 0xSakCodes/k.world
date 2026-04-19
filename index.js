@@ -40,12 +40,32 @@ function petKitty(card, type) {
 
 // popup function
 function spawnPopup(card, message) {
-  // to be added;
+  const rect = card.getBoundingClientRect();
+  const popup = document.createElement('div');
+  popup.className = 'popup';
+  popup.textContent = message;
+  document.body.appendChild(popup);
+
+  popup.style.left = `${rect.left + rect.width/2}px`;
+  popup.style.top = `${rect.top - 40 + window.scrollY}px`;
+
+  setTimeout(() => {
+    popup.style.opacity: '1';
+    popup.style.transform = 'translateX(-50%) translateY(-10px)';
+  }, 35);
 }
 
 // floating emojis
 function spawnReaction(card, emoji) {
-  // to be added;
+  const reaction = document.createElement('div');
+  reaction.className = 'reaction';
+  reaction.textContent = emoji;
+  const x = Math.random() * 50-25;
+  const y = -20;
+  reaction.style.left = `calc(50%+ ${x}px)`;
+  reaction.style.top = `${y}px`;
+  card.appendChild(reaction);
+  setTimeout(() => reaction.remove(), 1500);
 }
 
 // furious kitty, scratches;
