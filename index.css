@@ -7,3 +7,41 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+
+header {
+  background-color: #ffb6c1;
+  padding: 2rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-family: 'Fira Code', cursive;
+  font-size: 2.2rem;
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 2px #ff69b4;
+}
+
+.kitty-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.kitty-card {
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.kitty-card:hover {
+  transform: translateY(-10px) rotate(-3deg);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
