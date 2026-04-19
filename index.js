@@ -50,7 +50,7 @@ function spawnPopup(card, message) {
   popup.style.top = `${rect.top - 40 + window.scrollY}px`;
 
   setTimeout(() => {
-    popup.style.opacity: '1';
+    popup.style.opacity = '1';
     popup.style.transform = 'translateX(-50%) translateY(-10px)';
   }, 35);
 }
